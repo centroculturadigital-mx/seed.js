@@ -77,7 +77,7 @@ const content = (numMax,numMin,config) => {
         
     }
 
-    let wordsTitle = titleLength` ? titleLength` : 4+Math.ceil(Math.random()*5)
+    let wordsTitle = titleLength ? titleLength : 4+Math.ceil(Math.random()*5)
 
     return ({
         create: {
