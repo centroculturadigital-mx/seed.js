@@ -34,8 +34,8 @@ function slugify (str) {
     return str;
 }
 
-const { blocks, content } = require("./funciones/contentGenerar")
-const relation = require('./funciones/generarRelaciones')
+const { blocks, content } = require("./functions/content")
+// const relationship = require('./functions/relationships')
 
 
 const name = (numMax,numMin) =>  capitalize(faker.random.words(
@@ -183,7 +183,7 @@ module.exports = {
     content,
     name,
     date,
-    relation,
+    // relationship,
     email,
     phone
 }
