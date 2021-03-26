@@ -61,7 +61,7 @@ const content = (numMax,numMin,config) => {
 
     const {
       initialType,
-      titleLength`
+      titleLength
     } = {...config}
 
     let initialText
