@@ -1,5 +1,3 @@
-const faker = require("faker/locale/es_MX")
-
 const blocks = (numMax,numMin) => {
 
   if( parseInt(numMax) > 0 ) {
@@ -63,7 +61,7 @@ const content = (numMax,numMin,config) => {
 
     const {
       initialType,
-      titleLength
+      titleLength`
     } = {...config}
 
     let initialText
@@ -79,7 +77,7 @@ const content = (numMax,numMin,config) => {
         
     }
 
-    let wordsTitle = titleLength ? titleLength : 4+Math.ceil(Math.random()*5)
+    let wordsTitle = titleLength` ? titleLength` : 4+Math.ceil(Math.random()*5)
 
     return ({
         create: {
