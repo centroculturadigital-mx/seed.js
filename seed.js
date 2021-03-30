@@ -171,6 +171,14 @@ const avatar = (gender) => {
   
 }
 
+
+const choose = arr => arr[
+  Math.floor(
+    Math.random() * arr.length
+  )
+]
+
+
 module.exports = {
     paragraph,
     avatar,
@@ -185,6 +193,7 @@ module.exports = {
     date,
     // relationship,
     email,
-    phone
+    phone,
+            
+    choose
 }
-
