@@ -38,9 +38,7 @@ const { blocks, content } = require("./functions/content")
 // const relationship = require('./functions/relationships')
 
 
-const name = (numMax,numMin) =>  capitalize(faker.random.words(
-  Math.max(Math.ceil(Math.random()*numMax),numMin)
-).toLowerCase())
+const name = text
 
 const email = () => faker.internet.email()
 
@@ -48,6 +46,12 @@ const phone = () => faker.phone.phoneNumber()
 
 
 const date = (min,max) => faker.date.between(min,max);
+
+
+const text = (numMax,numMin) =>  capitalize(faker.random.words(
+  Math.max(Math.ceil(Math.random()*numMax),numMin)
+).toLowerCase())
+
 
 const paragraph = (longitud=256) => {
 
@@ -180,6 +184,7 @@ const choose = arr => arr[
 
 
 module.exports = {
+    text,
     paragraph,
     avatar,
     video,
